@@ -38,7 +38,11 @@
     $dateto=date('Y-m-d H:m:s'); 
     komment($user, $comment, $dateto);
     }
-    $link = @mysqli_connect('localhost', 'root', '', 'user');
+    $dbservername="ulsq0qqx999wqz84.chr7pe7iynqr.eu-west-1.rds.amazonaws.com";
+$dbusername= "gcp2sm41g9k9mouw";
+$dbpassword="cwyawjrh3urrhp0z";
+$dbname="xsvvaqgluhw0lups";
+$link=mysqli_connect($dbservername, $dbusername, $dbpassword, $dbname);
     $query = "SELECT Username as user, Comment as comment, Datewr as datei FROM comment";
     $result = mysqli_query($link, $query);
   echo "<form action='adatlap.php' method='POST'>";
