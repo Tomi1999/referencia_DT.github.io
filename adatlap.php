@@ -53,6 +53,7 @@ $link=mysqli_connect($dbservername, $dbusername, $dbpassword, $dbname);
   if (isset($_POST['törlés'])) {
     $username=$_SESSION['user'];
     torles ($username);
+    header('Location:adatlap.php');
   }
   echo "</table>";
   echo "</form>";
