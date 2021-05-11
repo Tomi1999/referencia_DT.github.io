@@ -54,6 +54,7 @@ $link=mysqli_connect($dbservername, $dbusername, $dbpassword, $dbname);
     $username=$_SESSION['user'];
     torles ($username);
     header('Location:adatlap.php');
+	  exit();
   }
   echo "</table>";
   echo "</form>";
