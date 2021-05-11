@@ -19,7 +19,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
 }
 
 if (isset($_POST['vissza'])) {
-	header("Location:kezdo.php");
+	header("Location:kezdo_javitott.php");
   exit();
 }
 ?>
