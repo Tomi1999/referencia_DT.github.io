@@ -29,7 +29,7 @@
 </html>
 <?php
     session_start();
-    echo $_SESSION['user'];
+    echo "Üdv ".$_SESSION['user'];
     include('fuggvenyek.php');
     if (isset($_POST['comment']) && isset($_POST['kiiratas']) && !empty($_POST['comment'])) {
     $user=$_SESSION['user'];
